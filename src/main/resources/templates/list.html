@@ -37,7 +37,27 @@
 </nav>
 
 
-<h1>인성적성검사/ 직무능력검사</h1>
+<div class="container">
+	<table class="table table-responsive">
+		<caption>회원 목록</caption>
+		<thead>
+			<tr>
+				<th>아이디</th>
+				<th>이름</th>
+				<th>이메일</th>
+			</tr>
+		</thead>
+		<thead>
+			{{#users}}
+			<tr>
+				<th>{{userId}}</th>
+				<th>{{userName}}</th>
+				<th>{{email}}</th>
+			</tr>
+			{{/users}}
+		</thead>
+	</table>
+</div>
 
 
 <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
